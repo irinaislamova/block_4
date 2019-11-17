@@ -165,6 +165,7 @@ color: #1B1C21;
 text-decoration: none;
 padding-left: 32px;
 position: relative;
+font-weight: 500;
 }
 .link-more::before{
     content: "";
