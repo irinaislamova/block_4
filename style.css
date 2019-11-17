@@ -33,139 +33,156 @@
 }
 
 body{
-    /*height: 512px;*/
-    width: 100%;
-    max-widh: 1120px;    
+    /*height: 512px;*/    
+    /*max-width: 1120px;*/    
     background: #f8f8f8;
-    padding:  42px 32px;
+    padding:  0;
+    margin: 0;
     font-family: TT Lakes;
-
 }
-header h1{
-display: block;
-height: 40px;
-
-font-family: TT Lakes;
-font-size: 28px;
-line-height: 40px;
-/* identical to box height, or 143% */
-letter-spacing: -0.6px;
-font-weight: bold;
-
-color: #1B1C21;
-}
-.high-block{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-}
-ul{
-    
+.list-reset{
+     padding-left: 0;/*стандартные*/
     list-style: none;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-wrapper{
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    padding-top: 42px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
-ul.high{    
-    backgound: lightblue;
-    justify-content: center;
-    align-items: center;
+.header-menu{
+    display: flex;
+    margin-left: auto;   
 }
-ul.high a{
+.header-menu-item{
+    margin-left: 32px;
+}
+.header-menu-item a{
+    position: relative;    
+    padding-right: 48px;
+    line-height: 40px;
+    display: block;
     text-decoration: none;
-
-    font-family: TT Lakes;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-    text-align: right;
+    font-size: 16px;         
     letter-spacing: -0.2px;
     color: #1B1C21;
     font-weight: 500;
 }
-ul.high a:first-child{
-    margin-right: 32px;
+.header-menu-item a::after{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background-color: #ff3e79;
+    background-image: url("images/tools.svg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-menu-item:nth-child(1) a::after{
+       background-image: url("images/tools.svg");   
+}
+.header-menu-item:nth-child(2) a::after{
+       background-image: url("images/status.svg");   
 }
 
 
-.low{
+
+.main{
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 42px 32px;
+}
+.main-title{
+    
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    color: #1B1C21;
+    position: relative;
+    margin-top: 0;
+}
+.main-title::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background-color: #b8ffec;
+    border-radius: 2px;
+    top: 0;
+    left: -32px;  
+}
+.main-nav{
     display: flex;
-    justify-content: space-between;
-    backgrond: lightblue;
+    flex-wrap: wrap;       
     margin-top: 10px;
-    padding: 0px 22px;
+    
 }
-ul.low a{
-    /* Ремонтируемые устрой */
-    font-family: TT Lakes;
+.main-nav-item{}
+.main-nav-item a{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82;
     text-decoration: none;
-    padding: 0;
+    padding: 6px 20px;
+    border: 2px solid transparent;
+    border-radius: 6px;   
+    display: block;
 }
-ul.low a:hover, ul.low a:focus{
-background: #FFFFFF;
-border: 2px solid #B8FFEC;
-box-sizing: border-box;
-border-radius: 6px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-padding: 7px 40px;
+.main-nav-item:hover a{
+    background-color: white;
+    border-color: #b8ffec;
 }
-
-main{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+.main-content{
     display: flex;
+    align-items: flex-start;
 }
-.main-left{
-    margin-right: 32px;
+.main-text{   
+    flex-grow: 1;
 }
-
-main h2{
- 
-font-family: TT Lakes;
+.link-more{
 font-size: 16px;
 line-height: 24px;
-letter-spacing: -0.2px;
-color: #7E7E82;
-padding-left: 22px;
-
-
-}
-main p{
-
-font-family: TT Lakes;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
-letter-spacing: 0.2px;
-color: #1B1C21;
-}
-main a{
-
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
 letter-spacing: -0.2px;
 color: #1B1C21;
 text-decoration: none;
-font-weight: 500;
-
+padding-left: 32px;
+position: relative;
 }
-main img{
-
-background: url(Image.png);
+.link-more::before{
+    content: "";
+    display: block;
+    background-image: url("images/a.svg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 8px;
+    height: 11lupx;
+    position: absolute;
+    top: 5px;
+    left: 10px;
 }
-
+.main-img{
+    width: 50%;
+    margin-left: 32px;
+    flex-shrink: 0;
+}
 
 
 
