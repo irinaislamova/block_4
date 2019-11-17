@@ -178,6 +178,7 @@ position: relative;
     position: absolute;
     top: 5px;
     left: 10px;
+    font-weight: 500;
 }
 .main-img{
     width: 50%;
