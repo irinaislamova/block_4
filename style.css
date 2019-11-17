@@ -167,7 +167,7 @@ padding-left: 32px;
 position: relative;
 }
 .link-more::before{
-    content: "";
+    content: "hh";
     display: block;
     background-image: url("images/a.svg");
     background-image: url("images/a.png");
