@@ -170,6 +170,7 @@ position: relative;
     content: "";
     display: block;
     background-image: url("images/a.svg");
+    background-image: url("images/a.png");
     background-repeat: no-repeat;
     background-position: center; 
     width: 8px;
