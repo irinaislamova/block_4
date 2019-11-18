@@ -112,10 +112,7 @@ body{
        background-image: url("images/status.svg");   
 }
 .main-menu-item:hover a{
-    background-color: white;
-    pading: 6px 20px;
-    border: 2px solid #b8ffec;
-    border-radius: 6px; 
+    color: #0266d6;
 }
 
 
@@ -170,11 +167,7 @@ position: relative;
     left: 10px;
 }
 .link-more:hover{
-    background-color: white;
-    background-color: white;
-    pading: 6px 20px;
-    border: 2px solid #b8ffec;
-    border-radius: 6px; 
+    color: transparent;
 }
 .main-img{
     width: 50%;
