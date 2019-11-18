@@ -33,12 +33,10 @@
 }
 
 body{
-    /*height: 512px;*/    
-    /*max-width: 1120px;*/    
     background: #f8f8f8;
     padding:  0;
     margin: 0;
-    font-family: TT Lakes;
+    font-family: "TT Lakes", "Times New Roman", sans;
 }
 .list-reset{
      padding-left: 0;/*стандартные*/
@@ -108,8 +106,7 @@ body{
     margin-right: auto;
     padding: 42px 32px;
 }
-.main-title{
-    
+.main-title{    
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
@@ -158,21 +155,20 @@ body{
     flex-grow: 1;
 }
 .link-more{
-font-size: 16px;
-line-height: 24px;
-letter-spacing: -0.2px;
-color: #1B1C21;
-text-decoration: none;
-padding-left: 32px;
-position: relative;
-font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-decoration: none;
+    padding-left: 32px;
+    position: relative;
+    font-weight: 500;
 }
 .link-more::before{
     content: "";
     display: block;
     background-image: url("images/a.svg");
-    /*background-image: url("images/a.png");*/
-    background-repeat: no-repeat;
+        background-repeat: no-repeat;
     background-position: center; 
     width: 8px;
     height: 11px;
@@ -184,6 +180,7 @@ font-weight: 600;
     width: 50%;
     margin-left: 32px;
     flex-shrink: 0;
+    border-radius: 6px;
 }
 
 
