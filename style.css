@@ -39,7 +39,7 @@ body{
     font-family: "TT Lakes", "Times New Roman", serif;
 }
 .list-reset{
-     padding-left: 0;/*стандартные*/
+    padding-left: 0;/*стандартные*/
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
