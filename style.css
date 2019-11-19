@@ -145,8 +145,8 @@ body{
     flex-grow: 1;
 }
 button.link-more{
-    border: 0;
     background: transparent;
+    border: none;
 }
 .link-more{
     font-size: 16px;
